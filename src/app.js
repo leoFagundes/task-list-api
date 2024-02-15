@@ -14,5 +14,6 @@ connection.once("open", () => {
 
 const app = express();
 app.use(cors());
+routes(app)
 
 export default app;
