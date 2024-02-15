@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
-import { listSchema } from "./List";
+import { listSchema } from "./List.js";
 
 const userSchema = new mongoose.Schema(
     {
