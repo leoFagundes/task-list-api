@@ -1,11 +1,11 @@
 import express from "express";
-import user from '../controller/userController.js'
-import list from '../controller/listController.js'
+import users from "./userRouter.js";
+import list from "./listRouter.js";
 
 const routes = (app) => {
   app.route("/").get((req, res) => res.status(200).send("todo_lists"));
 
-  app.use(express.json(), user, list);
+  app.use(express.json(), users, list);
 };
 
 export default routes;

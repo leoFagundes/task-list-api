@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
 async function connectDB() {
-    mongoose.connect(
-        `mongodb+srv://listDB:${process.env.PASSWORD_DB_CONNECTION}@cluster0.gd55hbi.mongodb.net/listDB?retryWrites=true&w=majority`
-    )
+  mongoose.connect(
+    `mongodb+srv://tasklist:${process.env.PASSWORD_DB_CONNECTION}@cluster0.lxf6cff.mongodb.net/tasklistDB?retryWrites=true&w=majority`
+  );
 
-    return mongoose.connection;
+  return mongoose.connection;
 }
 
 export default connectDB;
